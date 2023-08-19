@@ -1,12 +1,16 @@
-const firstName = "Jonas";
-const job = "teacher";
-const birthYear = 1999;
+const age = 14;
 
-const jonas =
-  "I'm " + firstName + ", a " + (2023 - birthYear) + " years old " + job + "!";
+if (age >= 18) {
+  console.log(`Sarah can start driving licence `);
+} else {
+  console.log(`Sarah is not old enough; she needs to wait ${18 - age} years`);
+}
 
-console.log(jonas);
-
-const jonasNew = `I'm ${firstName}, a ${2023 - birthYear} years old ${job}!`;
-
-console.log(jonasNew);
+const birthYear = 1991;
+let century;
+if (birthYear <= 2000) {
+  century = 20;
+} else {
+  century = 21;
+}
+console.log(century);
