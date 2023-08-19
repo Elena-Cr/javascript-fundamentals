@@ -1,13 +1,12 @@
-const heightMark = 169;
-const weightMark = 78;
-const heightJohn = 195;
-const weightJohn = 92;
+const firstName = "Jonas";
+const job = "teacher";
+const birthYear = 1999;
 
-let BMIjohn = weightJohn / heightJohn ** 2;
-let BMImark = weightMark / heightJohn ** 2;
+const jonas =
+  "I'm " + firstName + ", a " + (2023 - birthYear) + " years old " + job + "!";
 
-let markHigherBMI = BMImark > BMIjohn;
+console.log(jonas);
 
-console.log(BMIjohn);
-console.log(BMImark);
-console.log(markHigherBMI);
+const jonasNew = `I'm ${firstName}, a ${2023 - birthYear} years old ${job}!`;
+
+console.log(jonasNew);
