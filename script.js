@@ -1,16 +1,17 @@
-// let js = "amazing";
-// console.log(40 + 8 + 23 - 23);
+const now = 2023;
 
-// console.log("Elena");
-// console.log(23);
+const ageElena = now - 2002;
+const ageSarah = now - 1999;
 
-// let firstName = "Elena";
+console.log(ageElena, ageSarah);
 
-let age = 30;
-age = 31;
+console.log(ageElena * 2, ageSarah / 10, 2 ** 3);
 
-const birthYear = 1991;
-// birthYear = 1990;
+const firstName = "Elena";
+const lastName = "C.";
+console.log(firstName + " " + lastName);
 
-var job = "programmer";
-job = "teacher";
+let x = 10 + 5;
+
+console.log(ageElena > ageSarah);
+console.log(ageSarah >= 18);
