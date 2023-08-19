@@ -1,17 +1,13 @@
-const now = 2023;
+const heightMark = 169;
+const weightMark = 78;
+const heightJohn = 195;
+const weightJohn = 92;
 
-const ageElena = now - 2002;
-const ageSarah = now - 1999;
+let BMIjohn = weightJohn / heightJohn ** 2;
+let BMImark = weightMark / heightJohn ** 2;
 
-console.log(ageElena, ageSarah);
+let markHigherBMI = BMImark > BMIjohn;
 
-console.log(ageElena * 2, ageSarah / 10, 2 ** 3);
-
-const firstName = "Elena";
-const lastName = "C.";
-console.log(firstName + " " + lastName);
-
-let x = 10 + 5;
-
-console.log(ageElena > ageSarah);
-console.log(ageSarah >= 18);
+console.log(BMIjohn);
+console.log(BMImark);
+console.log(markHigherBMI);
