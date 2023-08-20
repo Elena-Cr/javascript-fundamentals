@@ -28,15 +28,29 @@
 // const age2 = calcAge2(1991);
 // console.log(age1, age2);
 
-const calcAge3 = (birtYear) => 2023 - birtYear;
+// const calcAge3 = (birtYear) => 2023 - birtYear;
 
-const age3 = calcAge3(1991);
-console.log(age3);
+// const age3 = calcAge3(1991);
+// console.log(age3);
 
-const yearsUntilRetirement = (birthYear) => {
-  const age = calcAge3(birthYear);
-  const retirement = 65 - age;
-  return retirement;
-};
+// const yearsUntilRetirement = (birthYear) => {
+//   const age = calcAge3(birthYear);
+//   const retirement = 65 - age;
+//   return retirement;
+// };
 
-console.log(yearsUntilRetirement(1991));
+// console.log(yearsUntilRetirement(1991));
+
+const friends = ["Michael", "Steven", "Peter"];
+console.log(friends);
+
+const years = new Array(1991, 1984, 2008, 2020);
+
+console.log(friends[0]);
+
+console.log(friends.length);
+
+console.log(friends[friends.length - 1]);
+
+friends[2] = "Jay";
+console.log(friends);
