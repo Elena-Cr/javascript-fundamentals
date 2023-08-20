@@ -41,16 +41,36 @@
 
 // console.log(yearsUntilRetirement(1991));
 
+// const friends = ["Michael", "Steven", "Peter"];
+// console.log(friends);
+
+// const years = new Array(1991, 1984, 2008, 2020);
+
+// console.log(friends[0]);
+
+// console.log(friends.length);
+
+// console.log(friends[friends.length - 1]);
+
+// friends[2] = "Jay";
+// console.log(friends);
+
 const friends = ["Michael", "Steven", "Peter"];
+
+// Add elements
+friends.push("Jay");
 console.log(friends);
 
-const years = new Array(1991, 1984, 2008, 2020);
-
-console.log(friends[0]);
-
-console.log(friends.length);
-
-console.log(friends[friends.length - 1]);
-
-friends[2] = "Jay";
+friends.unshift("John");
 console.log(friends);
+
+// Remove elements
+friends.pop();
+const popped = friends.pop();
+console.log(popped);
+console.log(friends);
+
+friends.shift();
+console.log(friends);
+
+console.log(friends.indexOf("Steven"));
