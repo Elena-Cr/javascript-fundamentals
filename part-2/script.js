@@ -55,22 +55,52 @@
 // friends[2] = "Jay";
 // console.log(friends);
 
-const friends = ["Michael", "Steven", "Peter"];
+// const friends = ["Michael", "Steven", "Peter"];
 
-// Add elements
-friends.push("Jay");
-console.log(friends);
+// // Add elements
+// friends.push("Jay");
+// console.log(friends);
 
-friends.unshift("John");
-console.log(friends);
+// friends.unshift("John");
+// console.log(friends);
 
-// Remove elements
-friends.pop();
-const popped = friends.pop();
-console.log(popped);
-console.log(friends);
+// // Remove elements
+// friends.pop();
+// const popped = friends.pop();
+// console.log(popped);
+// console.log(friends);
 
-friends.shift();
-console.log(friends);
+// friends.shift();
+// console.log(friends);
 
-console.log(friends.indexOf("Steven"));
+// console.log(friends.indexOf("Steven"));
+
+const elena = {
+  firstName: "Elena",
+  lastName: "C.",
+  age: 2023 - 2002,
+  job: "student",
+  friends: ["Alex", "Peter", "Steven"],
+};
+
+console.log(elena);
+
+console.log(elena.age);
+console.log(elena["age"]);
+
+const nameKey = "Name";
+console.log(elena["first" + nameKey]);
+
+const interestedIn = prompt(
+  "What do you want to know about Elena? firstName, lastName, age, job and friends"
+);
+
+if (elena[interestedIn]) {
+  console.log(elena[interestedIn]);
+} else {
+  console.log(
+    "Wrong request! Choose between firstName, lastName, age, job and friends"
+  );
+}
+
+elena.location = "DK";
