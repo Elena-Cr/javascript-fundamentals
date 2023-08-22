@@ -109,41 +109,66 @@
 //   console.log(`Lifting weights, repetition ${rep} !`);
 // }
 
-const jonas = [
-  "Jonas",
-  "Schmedtmann",
-  2037 - 1991,
-  "teacher",
-  ["Michael", "Peter", "Steven"],
-];
+// const jonas = [
+//   "Jonas",
+//   "Schmedtmann",
+//   2037 - 1991,
+//   "teacher",
+//   ["Michael", "Peter", "Steven"],
+// ];
 
-const types = [];
+// const types = [];
 
-for (let i = 0; i < jonas.length; i++) {
-  console.log(jonas[i]);
+// for (let i = 0; i < jonas.length; i++) {
+//   console.log(jonas[i]);
 
-  // types[i] = typeof jonas[i];
-  types.push(typeof jonas[i]);
+//   // types[i] = typeof jonas[i];
+//   types.push(typeof jonas[i]);
+// }
+// console.log(types);
+
+// const years = [1991, 1995, 2008, 1969, 2020];
+// const ages = [];
+
+// for (let i = 0; i < years.length; i++) {
+//   ages[i] = 2023 - years[i];
+// }
+// console.log(years);
+// console.log(ages);
+
+// for (let i = 0; i < jonas.length; i++) {
+//   if (typeof jonas[i] !== "string") continue;
+
+//   console.log(jonas[i]);
+// }
+
+// for (let i = 0; i < jonas.length; i++) {
+//   if (typeof jonas[i] === "number") break;
+
+//   console.log(jonas[i]);
+// }
+
+// const jonas = [
+//   "Jonas",
+//   "Schmedtmann",
+//   2037 - 1991,
+//   "teacher",
+//   ["Michael", "Peter", "Steven"],
+// ];
+
+// for (let i = jonas.length - 1; i >= 0; i--) {
+//   console.log(jonas[i]);
+// }
+
+let rep = 1;
+while (rep <= 10) {
+  // console.log(`Lifting weights, repetition ${rep} !`);
+  rep++;
 }
-console.log(types);
 
-const years = [1991, 1995, 2008, 1969, 2020];
-const ages = [];
-
-for (let i = 0; i < years.length; i++) {
-  ages[i] = 2023 - years[i];
-}
-console.log(years);
-console.log(ages);
-
-for (let i = 0; i < jonas.length; i++) {
-  if (typeof jonas[i] !== "string") continue;
-
-  console.log(jonas[i]);
-}
-
-for (let i = 0; i < jonas.length; i++) {
-  if (typeof jonas[i] === "number") break;
-
-  console.log(jonas[i]);
+let dice = Math.trunc(Math.random() * 6) + 1;
+while (dice !== 6) {
+  console.log(`You rolled a ${dice}`);
+  dice = Math.trunc(Math.random() * 6) + 1;
+  if (dice === 6) console.log("Loop is about to end...");
 }
